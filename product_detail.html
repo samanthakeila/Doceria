@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Detalhes dos Produtos</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+	
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+
+		<style>
+			/* Estilos padrão para a imagem */
+			img {
+				max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner pai */
+				height: auto; /* Mantém a proporção da imagem */
+			}
+	
+			/* Media query para dispositivos com largura de até 600px (tipicamente celulares) */
+			@media screen and (max-width: 600px) {
+				img {
+					max-width: 100%; /* Reduz a largura da imagem para 100% do contêiner pai */
+				}
+			}
+		</style>
+
+		
+		<link href="themes/css/main.css" rel="stylesheet"/>
+		<link href="themes/css/jquery.fancybox.css" rel="stylesheet"/>
+				
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>				
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>
+		<script src="themes/js/jquery.fancybox.js"></script>
+	</head>
+    <body>		
+		<div id="top-bar" class="container">
+			<div class="row">
+				<div class="span8">
+					<div class="account pull-right">
+						<ul class="user-menu">				
+							<li><a href="cart.html">Seu Carrinho</a></li>
+							<li><a href="index.html">Homepage</a></li>					
+							<li><a href="register.html">Login</a></li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="container">
+			<section class="main-content">				
+				<div class="row">						
+					<div class="span9">
+						<div class="row">
+							<div class="span4">
+								<a href="themes/images/BoloDePote.jpg" class="thumbnail" data-fancybox-group="group1"><img alt="" src="themes/images/BoloDePote.jpg"></a>												
+								<ul class="thumbnails small">								
+									<li class="span1">
+										<a href="themes/images/Rosquinha.jpg" class="thumbnail" data-fancybox-group="group1" title="Rosquinha"><img src="themes/images/Rosquinha.jpg" alt=""></a>
+									</li>								
+									<li class="span1">
+										<a href="themes/images/Cookies.jpg" class="thumbnail" data-fancybox-group="group1" title="Cookies"><img src="themes/images/Cookies.jpg" alt=""></a>
+									</li>													
+									<li class="span1">
+										<a href="themes/images/Brigadeirão.jpg" class="thumbnail" data-fancybox-group="group1" title="Brigadeirão"><img src="themes/images/Brigadeirão.jpg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+							<div class="span5">
+								<address>
+									<strong>Nome:</strong> <span>Bolo de Pote</span><br>
+									<strong>Código do produto:</strong> <span>14</span><br>
+									<strong>Disponibilidade:</strong> <span>Pronta entrega</span><br>								
+								</address>									
+								<h4><strong>Preço: R$12.00</strong></h4>
+							</div>
+							<div class="span5">
+								<form class="form-inline">
+									<label>Quantidade:</label>
+									<input type="text" class="span1" placeholder="1">
+									<button class="btn btn-inverse" type="submit">Adicionar</button>
+								</form>
+							</div>							
+						</div>
+						<div class="row">
+							<div class="span9">
+								<ul class="nav nav-tabs" id="myTab">
+									<li class="active"><a href="#home">Descrição</a></li>
+									<li class=""><a href="#profile">Informações adicionais</a></li>
+								</ul>							 
+								<div class="tab-content">
+									<div class="tab-pane active" id="home">Um bolinho especial. Diferentemente dos bolos tradicionais, os bolos de pote são mais molhadinhos para garantir que as garfadas no potinho trarão um doce cremoso e fácil de degustar. Caso fiquem muito úmidos, os bolos comuns podem ter a estrutura da massa comprometida e até desmontar.</div>
+									<div class="tab-pane" id="profile">
+										<table class="table table-striped shop_attributes">	
+											<tbody>
+												<tr class="">
+													<th>Tamanho</th>
+													<td>Grande (10cm³) e Médio (6.5cm³)</td>
+												</tr>		
+												<tr class="alt">
+													<th>Sabor</th>
+													<td>Chocolate e Creme</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>							
+							</div>						
+						</div>
+					</div>
+				</div>
+			</section>			
+		</div>
+		<script src="themes/js/common.js"></script>
+		<script>
+			$(function () {
+				$('#myTab a:first').tab('show');
+				$('#myTab a').click(function (e) {
+					e.preventDefault();
+					$(this).tab('show');
+				})
+			})
+			$(document).ready(function() {
+				$('.thumbnail').fancybox({
+					openEffect  : 'none',
+					closeEffect : 'none'
+				});
+				
+				$('#myCarousel-2').carousel({
+                    interval: 2500
+                });								
+			});
+		</script>
+    </body>
+</html>

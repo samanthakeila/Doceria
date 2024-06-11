@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Doceria</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<style>
+			/* Estilos padrão para a imagem */
+			img {
+				max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner pai */
+				height: auto; /* Mantém a proporção da imagem */
+			}
+	
+			/* Media query para dispositivos com largura de até 600px (tipicamente celulares) */
+			@media screen and (max-width: 600px) {
+				img {
+					max-width: 100%; /* Reduz a largura da imagem para 100% do contêiner pai */
+				}
+			}
+		</style>
+
+		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		
+		<link href="themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="themes/css/main.css" rel="stylesheet"/>
+
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>				
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>
+	</head>
+    <body>		
+		<div id="top-bar" class="container">
+			<div class="row">
+				<div class="span8">
+					<div class="account pull-right">
+						<ul class="user-menu">				
+							<li><a href="cart.html">Seu Carrinho</a></li>					
+							<li><a href="register.html">Login</a></li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="container"></div>
+			<section class="header_text">
+				Compre já as nossas doçuras culinárias, aceitamos pix, aceitamos boleto com compras a partir de R$200.00
+				<br/>Não perca futuras ofertas!
+			</section>
+			<section class="main-content">
+				<div class="row">
+					<div class="span12">													
+						<div class="row">
+							<div class="span12">
+								<div id="myCarousel" class="myCarousel carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+											<ul class="thumbnails">												
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.html"><img src="themes/images/BoloDePote.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Bolo de Pote</a><br/>
+														<a href="products.html" class="category">Chocolate</a>
+														<p class="price">R$12.00</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.html"><img src="themes/images/Rosquinha.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Rosquinha</a><br/>
+														<a href="products.html" class="category">Temática dos Simpsons</a>
+														<p class="price">R$18.00</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="themes/images/Cookies.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Cookies</a><br/>
+														<a href="products.html" class="category">Crocante com gotas de Chocolate</a>
+														<p class="price">R$7.00</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.html"><img src="themes/images/Brigadeirão.jpg" alt="" /></a></p>
+														<a href="product_detail.html" class="title">Brigadeirão</a><br/>
+														<a href="products.html" class="category">O melhor de toda a grande SP</a>
+														<p class="price">R$35.00</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>							
+								</div>
+							</div>						
+						</div>
+						<br/>
+					</div>				
+				</div>
+			</section>
+		</div>
+		<script src="themes/js/common.js"></script>
+		<script src="themes/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(document).ready(function() {
+					$('.flexslider').flexslider({
+						animation: "fade",
+						slideshowSpeed: 4000,
+						animationSpeed: 600,
+						controlNav: false,
+						directionNav: true,
+						controlsContainer: ".flex-container" // the container that holds the flexslider
+					});
+				});
+			});
+		</script>
+    </body>
+</html>
